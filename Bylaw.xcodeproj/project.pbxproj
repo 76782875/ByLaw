@@ -39,6 +39,7 @@
 		ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */; };
 		ED4F90321C8ABDE1006CBC92 /* CancelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */; };
 		ED4F90331C8ABDE1006CBC92 /* CancelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */; };
+		ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90361C8AF24C006CBC92 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,8 @@
 		ED4F902F1C8ABDE1006CBC92 /* CancelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelViewController.h; sourceTree = "<group>"; };
 		ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelViewController.m; sourceTree = "<group>"; };
 		ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelViewController.xib; sourceTree = "<group>"; };
+		ED4F90351C8AF24C006CBC92 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		ED4F90361C8AF24C006CBC92 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,7 @@
 		ED1209261C821D9000F80A18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F90341C8AF237006CBC92 /* LoginRegiserViewController */,
 				ED4F8FC31C8A7E0B006CBC92 /* NeedHelpViewController */,
 				ED1209981C82B81800F80A18 /* LeftTableViewController */,
 				ED1209841C82AD8F00F80A18 /* BaseViewController */,
@@ -469,6 +473,15 @@
 			path = FindLawerController;
 			sourceTree = "<group>";
 		};
+		ED4F90341C8AF237006CBC92 /* LoginRegiserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F90351C8AF24C006CBC92 /* LoginViewController.h */,
+				ED4F90361C8AF24C006CBC92 /* LoginViewController.m */,
+			);
+			path = LoginRegiserViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -657,6 +670,7 @@
 				ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */,
 				ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */,
 				ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */,
+				ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */,
 				ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */,
 				ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */,
 				ED4F8FD21C8A7E0B006CBC92 /* HomeViewController.m in Sources */,
