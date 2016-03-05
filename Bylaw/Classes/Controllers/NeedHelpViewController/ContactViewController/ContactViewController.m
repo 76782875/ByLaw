@@ -7,7 +7,7 @@
 //
 
 #import "ContactViewController.h"
-#define heihtRaido 0.1f
+#import "CZCountDownView.h"
 @interface ContactViewController ()
 {
     
@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     UILabel * waitLabel=[UILabel new];
+    waitLabel.backgroundColor=CLEARCOLOR;
     
     
     

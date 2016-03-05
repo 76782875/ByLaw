@@ -27,11 +27,12 @@
 		ED1209971C82B7CE00F80A18 /* SafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209961C82B7CE00F80A18 /* SafeViewController.m */; };
 		ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209991C82B84200F80A18 /* LeftTableViewController.m */; };
 		ED120A1A1C83077F00F80A18 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = ED120A191C83077F00F80A18 /* UINavigationBar+Awesome.m */; };
-		ED120A1E1C83164100F80A18 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED120A1D1C83164100F80A18 /* LeftCell.m */; };
-		ED2FDAB51C89B67B00C2A950 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2FDAB41C89B67B00C2A950 /* HomeViewController.m */; };
-		ED2FDAB81C89B6B200C2A950 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2FDAB71C89B6B200C2A950 /* ContactViewController.m */; };
-		ED2FDABB1C89B6C500C2A950 /* AgreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2FDABA1C89B6C500C2A950 /* AgreeViewController.m */; };
-		ED2FDABE1C89B6DD00C2A950 /* MyQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2FDABD1C89B6DD00C2A950 /* MyQuestionViewController.m */; };
+		ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FC61C8A7E0B006CBC92 /* AgreeViewController.m */; };
+		ED4F8FD11C8A7E0B006CBC92 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FC91C8A7E0B006CBC92 /* ContactViewController.m */; };
+		ED4F8FD21C8A7E0B006CBC92 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FCC1C8A7E0B006CBC92 /* HomeViewController.m */; };
+		ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FCF1C8A7E0B006CBC92 /* MyQuestionViewController.m */; };
+		ED4F8FDB1C8A7E73006CBC92 /* CZCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */; };
+		ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,16 +94,18 @@
 		ED12099A1C82B84200F80A18 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
 		ED120A181C83077F00F80A18 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		ED120A191C83077F00F80A18 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
-		ED120A1C1C83164100F80A18 /* LeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
-		ED120A1D1C83164100F80A18 /* LeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
-		ED2FDAB31C89B67B00C2A950 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		ED2FDAB41C89B67B00C2A950 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		ED2FDAB61C89B6B200C2A950 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
-		ED2FDAB71C89B6B200C2A950 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
-		ED2FDAB91C89B6C500C2A950 /* AgreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreeViewController.h; sourceTree = "<group>"; };
-		ED2FDABA1C89B6C500C2A950 /* AgreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreeViewController.m; sourceTree = "<group>"; };
-		ED2FDABC1C89B6DD00C2A950 /* MyQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQuestionViewController.h; sourceTree = "<group>"; };
-		ED2FDABD1C89B6DD00C2A950 /* MyQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQuestionViewController.m; sourceTree = "<group>"; };
+		ED4F8FC51C8A7E0B006CBC92 /* AgreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreeViewController.h; sourceTree = "<group>"; };
+		ED4F8FC61C8A7E0B006CBC92 /* AgreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreeViewController.m; sourceTree = "<group>"; };
+		ED4F8FC81C8A7E0B006CBC92 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		ED4F8FC91C8A7E0B006CBC92 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		ED4F8FCB1C8A7E0B006CBC92 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		ED4F8FCC1C8A7E0B006CBC92 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		ED4F8FCE1C8A7E0B006CBC92 /* MyQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQuestionViewController.h; sourceTree = "<group>"; };
+		ED4F8FCF1C8A7E0B006CBC92 /* MyQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQuestionViewController.m; sourceTree = "<group>"; };
+		ED4F8FD61C8A7E73006CBC92 /* CZCountDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCountDownView.h; sourceTree = "<group>"; };
+		ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCountDownView.m; sourceTree = "<group>"; };
+		ED4F8FD91C8A7E73006CBC92 /* LeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
+		ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,9 +232,9 @@
 		ED1209261C821D9000F80A18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F8FC31C8A7E0B006CBC92 /* NeedHelpViewController */,
 				ED1209981C82B81800F80A18 /* LeftTableViewController */,
 				ED1209841C82AD8F00F80A18 /* BaseViewController */,
-				ED1209711C82A17400F80A18 /* HomeViewController */,
 				ED12098B1C82B70500F80A18 /* MyInfoViewController */,
 				ED12098A1C82B70500F80A18 /* SysMsgViewController */,
 				ED1209891C82B70500F80A18 /* AccManViewController */,
@@ -251,7 +254,8 @@
 		ED1209281C821D9000F80A18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ED120A1B1C83164100F80A18 /* LeftTableCell */,
+				ED4F8FD41C8A7E73006CBC92 /* NeedHelpView */,
+				ED4F8FD81C8A7E73006CBC92 /* LeftTableView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,21 +289,6 @@
 			children = (
 			);
 			path = Libs;
-			sourceTree = "<group>";
-		};
-		ED1209711C82A17400F80A18 /* HomeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				ED2FDAB31C89B67B00C2A950 /* HomeViewController.h */,
-				ED2FDAB41C89B67B00C2A950 /* HomeViewController.m */,
-				ED2FDAB61C89B6B200C2A950 /* ContactViewController.h */,
-				ED2FDAB71C89B6B200C2A950 /* ContactViewController.m */,
-				ED2FDAB91C89B6C500C2A950 /* AgreeViewController.h */,
-				ED2FDABA1C89B6C500C2A950 /* AgreeViewController.m */,
-				ED2FDABC1C89B6DD00C2A950 /* MyQuestionViewController.h */,
-				ED2FDABD1C89B6DD00C2A950 /* MyQuestionViewController.m */,
-			);
-			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		ED1209761C82A1D800F80A18 /* HomeModel */ = {
@@ -363,13 +352,77 @@
 			path = LeftTableViewController;
 			sourceTree = "<group>";
 		};
-		ED120A1B1C83164100F80A18 /* LeftTableCell */ = {
+		ED4F8FC31C8A7E0B006CBC92 /* NeedHelpViewController */ = {
 			isa = PBXGroup;
 			children = (
-				ED120A1C1C83164100F80A18 /* LeftCell.h */,
-				ED120A1D1C83164100F80A18 /* LeftCell.m */,
+				ED4F8FC41C8A7E0B006CBC92 /* AgreeViewController */,
+				ED4F8FC71C8A7E0B006CBC92 /* ContactViewController */,
+				ED4F8FCA1C8A7E0B006CBC92 /* HomeViewController */,
+				ED4F8FCD1C8A7E0B006CBC92 /* MyQuestionViewContoller */,
 			);
-			path = LeftTableCell;
+			path = NeedHelpViewController;
+			sourceTree = "<group>";
+		};
+		ED4F8FC41C8A7E0B006CBC92 /* AgreeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FC51C8A7E0B006CBC92 /* AgreeViewController.h */,
+				ED4F8FC61C8A7E0B006CBC92 /* AgreeViewController.m */,
+			);
+			path = AgreeViewController;
+			sourceTree = "<group>";
+		};
+		ED4F8FC71C8A7E0B006CBC92 /* ContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FC81C8A7E0B006CBC92 /* ContactViewController.h */,
+				ED4F8FC91C8A7E0B006CBC92 /* ContactViewController.m */,
+			);
+			path = ContactViewController;
+			sourceTree = "<group>";
+		};
+		ED4F8FCA1C8A7E0B006CBC92 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FCB1C8A7E0B006CBC92 /* HomeViewController.h */,
+				ED4F8FCC1C8A7E0B006CBC92 /* HomeViewController.m */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		ED4F8FCD1C8A7E0B006CBC92 /* MyQuestionViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FCE1C8A7E0B006CBC92 /* MyQuestionViewController.h */,
+				ED4F8FCF1C8A7E0B006CBC92 /* MyQuestionViewController.m */,
+			);
+			path = MyQuestionViewContoller;
+			sourceTree = "<group>";
+		};
+		ED4F8FD41C8A7E73006CBC92 /* NeedHelpView */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FD51C8A7E73006CBC92 /* ContactView */,
+			);
+			path = NeedHelpView;
+			sourceTree = "<group>";
+		};
+		ED4F8FD51C8A7E73006CBC92 /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FD61C8A7E73006CBC92 /* CZCountDownView.h */,
+				ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */,
+			);
+			path = ContactView;
+			sourceTree = "<group>";
+		};
+		ED4F8FD81C8A7E73006CBC92 /* LeftTableView */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F8FD91C8A7E73006CBC92 /* LeftCell.h */,
+				ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */,
+			);
+			path = LeftTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,22 +610,23 @@
 			files = (
 				ED120A1A1C83077F00F80A18 /* UINavigationBar+Awesome.m in Sources */,
 				ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */,
+				ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */,
 				ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */,
+				ED4F8FD21C8A7E0B006CBC92 /* HomeViewController.m in Sources */,
 				ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */,
-				ED2FDABE1C89B6DD00C2A950 /* MyQuestionViewController.m in Sources */,
-				ED2FDAB51C89B67B00C2A950 /* HomeViewController.m in Sources */,
+				ED4F8FD11C8A7E0B006CBC92 /* ContactViewController.m in Sources */,
 				ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */,
-				ED120A1E1C83164100F80A18 /* LeftCell.m in Sources */,
+				ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */,
 				ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */,
 				ED1209941C82B7C300F80A18 /* AccManViewController.m in Sources */,
 				ED1209311C82225500F80A18 /* ApiList.m in Sources */,
 				ED12092E1C82223100F80A18 /* ApiRequest.m in Sources */,
-				ED2FDAB81C89B6B200C2A950 /* ContactViewController.m in Sources */,
 				ED1209341C82227900F80A18 /* ApiDataService.m in Sources */,
 				ED1209971C82B7CE00F80A18 /* SafeViewController.m in Sources */,
 				ED1209371C8223B200F80A18 /* UIViewController+HUD.m in Sources */,
 				ED1208F31C81EA6A00F80A18 /* main.m in Sources */,
-				ED2FDABB1C89B6C500C2A950 /* AgreeViewController.m in Sources */,
+				ED4F8FDB1C8A7E73006CBC92 /* CZCountDownView.m in Sources */,
+				ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
