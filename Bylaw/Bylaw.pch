@@ -60,6 +60,7 @@
 //----------------------字体--------------------------
 
 /** 标题 */
+#define Big_Title_Font [UIFont systemFontOfSize:28]
 #define Title_Font [UIFont systemFontOfSize:20]
 #define BLACKCOLOR [UIColor blackColor]
 

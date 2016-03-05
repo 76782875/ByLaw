@@ -8,6 +8,7 @@
 
 #import "CZCountDownView.h"
 // label数量
+
 #define labelCount 3
 #define separateLabelCount 2
 #define padding 5
@@ -17,14 +18,7 @@
 }
 @property (nonatomic,strong)NSMutableArray *timeLabelArrM;
 @property (nonatomic,strong)NSMutableArray *separateLabelArrM;
-// day
-@property (nonatomic,strong)UILabel *dayLabel;
-// hour
-@property (nonatomic,strong)UILabel *hourLabel;
-// minues
-@property (nonatomic,strong)UILabel *minuesLabel;
-// seconds
-@property (nonatomic,strong)UILabel *secondsLabel;
+
 @end
 
 @implementation CZCountDownView
@@ -103,8 +97,11 @@
     
    // self.dayLabel.text = [NSString stringWithFormat:@"%zd天",day];
     self.hourLabel.text = [NSString stringWithFormat:@"%zd时",hour];
+    self.hourLabel.font=Title_Font;
     self.minuesLabel.text = [NSString stringWithFormat:@"%zd分",minute];
+     self.minuesLabel.font=Title_Font;
     self.secondsLabel.text = [NSString stringWithFormat:@"%zd秒",second];
+     self.secondsLabel.font=Title_Font;
 }
 
 - (void)layoutSubviews{

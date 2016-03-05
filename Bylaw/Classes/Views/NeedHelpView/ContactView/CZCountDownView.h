@@ -17,6 +17,17 @@ typedef void(^TimerStopBlock)();
 @property (nonatomic,copy)NSString *backgroundImageName;
 // 时间停止后回调
 @property (nonatomic,copy)TimerStopBlock timerStopBlock;
+
+// day
+@property (nonatomic,strong)UILabel *dayLabel;
+// hour
+@property (nonatomic,strong)UILabel *hourLabel;
+// minues
+@property (nonatomic,strong)UILabel *minuesLabel;
+// seconds
+@property (nonatomic,strong)UILabel *secondsLabel;
+
+
 /**
  *  创建单例对象
  */

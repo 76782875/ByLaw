@@ -33,6 +33,8 @@
 		ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FCF1C8A7E0B006CBC92 /* MyQuestionViewController.m */; };
 		ED4F8FDB1C8A7E73006CBC92 /* CZCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */; };
 		ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */; };
+		ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */; };
+		ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,10 @@
 		ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCountDownView.m; sourceTree = "<group>"; };
 		ED4F8FD91C8A7E73006CBC92 /* LeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
 		ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
+		ED4F901F1C8A9ADC006CBC92 /* TYDotIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDotIndicatorView.h; sourceTree = "<group>"; };
+		ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDotIndicatorView.m; sourceTree = "<group>"; };
+		ED4F90231C8AAC4C006CBC92 /* FindLawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLawerViewController.h; sourceTree = "<group>"; };
+		ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindLawerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,7 @@
 		ED1209281C821D9000F80A18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F901E1C8A9ADC006CBC92 /* ContactView */,
 				ED4F8FD41C8A7E73006CBC92 /* NeedHelpView */,
 				ED4F8FD81C8A7E73006CBC92 /* LeftTableView */,
 			);
@@ -355,6 +362,7 @@
 		ED4F8FC31C8A7E0B006CBC92 /* NeedHelpViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F90221C8AAC28006CBC92 /* FindLawerController */,
 				ED4F8FC41C8A7E0B006CBC92 /* AgreeViewController */,
 				ED4F8FC71C8A7E0B006CBC92 /* ContactViewController */,
 				ED4F8FCA1C8A7E0B006CBC92 /* HomeViewController */,
@@ -423,6 +431,24 @@
 				ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */,
 			);
 			path = LeftTableView;
+			sourceTree = "<group>";
+		};
+		ED4F901E1C8A9ADC006CBC92 /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F901F1C8A9ADC006CBC92 /* TYDotIndicatorView.h */,
+				ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */,
+			);
+			path = ContactView;
+			sourceTree = "<group>";
+		};
+		ED4F90221C8AAC28006CBC92 /* FindLawerController */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F90231C8AAC4C006CBC92 /* FindLawerViewController.h */,
+				ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */,
+			);
+			path = FindLawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,6 +637,7 @@
 				ED120A1A1C83077F00F80A18 /* UINavigationBar+Awesome.m in Sources */,
 				ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */,
 				ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */,
+				ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */,
 				ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */,
 				ED4F8FD21C8A7E0B006CBC92 /* HomeViewController.m in Sources */,
 				ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */,
@@ -618,6 +645,7 @@
 				ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */,
 				ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */,
 				ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */,
+				ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */,
 				ED1209941C82B7C300F80A18 /* AccManViewController.m in Sources */,
 				ED1209311C82225500F80A18 /* ApiList.m in Sources */,
 				ED12092E1C82223100F80A18 /* ApiRequest.m in Sources */,

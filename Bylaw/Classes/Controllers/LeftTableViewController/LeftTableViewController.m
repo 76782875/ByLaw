@@ -57,7 +57,7 @@
     
     
     UIImageView *imgView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, SCREEN_HEIGHT*2/7)];
-    imgView.image=ImageNamed(@"myLogo");
+    imgView.image=ImageNamed(@"ic_defund_menu_bg");
     self.tableView.tableHeaderView=imgView;
     
     

@@ -23,7 +23,7 @@
     [needBtn setTitle:@"需要帮助" forState:UIControlStateNormal];
     [needBtn addTarget:self action:@selector(needHelp) forControlEvents:UIControlEventTouchUpInside];
     [needBtn setTitleColor:BLACKCOLOR forState:UIControlStateNormal];
-    needBtn.titleLabel.font=Title_Font;
+    needBtn.titleLabel.font=Big_Title_Font;
     [self.view addSubview:needBtn];
     
     

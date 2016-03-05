@@ -39,7 +39,7 @@
     [topView addSubview:titleLabel];
     
     UIButton *cancelBtn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [cancelBtn setBackgroundImage:ImageNamed(@"IMG_118") forState:UIControlStateNormal];
+    [cancelBtn setBackgroundImage:ImageNamed(@"img_login_no") forState:UIControlStateNormal];
     [topView addSubview:cancelBtn];
     
     UIButton *msgBtn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
