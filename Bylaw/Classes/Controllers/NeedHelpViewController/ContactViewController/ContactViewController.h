@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface ContactViewController : BaseViewController
-
+@property(nonatomic,strong)UIView *alertView;
 @end

@@ -35,6 +35,10 @@
 		ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */; };
 		ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */; };
 		ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */; };
+		ED4F90281C8AB870006CBC92 /* UIViewController+CWPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90271C8AB870006CBC92 /* UIViewController+CWPopup.m */; };
+		ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */; };
+		ED4F90321C8ABDE1006CBC92 /* CancelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */; };
+		ED4F90331C8ABDE1006CBC92 /* CancelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,13 @@
 		ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDotIndicatorView.m; sourceTree = "<group>"; };
 		ED4F90231C8AAC4C006CBC92 /* FindLawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLawerViewController.h; sourceTree = "<group>"; };
 		ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindLawerViewController.m; sourceTree = "<group>"; };
+		ED4F90261C8AB870006CBC92 /* UIViewController+CWPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CWPopup.h"; sourceTree = "<group>"; };
+		ED4F90271C8AB870006CBC92 /* UIViewController+CWPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CWPopup.m"; sourceTree = "<group>"; };
+		ED4F902C1C8ABB8A006CBC92 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		ED4F902F1C8ABDE1006CBC92 /* CancelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelViewController.h; sourceTree = "<group>"; };
+		ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelViewController.m; sourceTree = "<group>"; };
+		ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +281,8 @@
 		ED1209291C821D9000F80A18 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F90261C8AB870006CBC92 /* UIViewController+CWPopup.h */,
+				ED4F90271C8AB870006CBC92 /* UIViewController+CWPopup.m */,
 				ED120A181C83077F00F80A18 /* UINavigationBar+Awesome.h */,
 				ED120A191C83077F00F80A18 /* UINavigationBar+Awesome.m */,
 				ED1209351C8223B200F80A18 /* UIViewController+HUD.h */,
@@ -385,6 +398,9 @@
 			children = (
 				ED4F8FC81C8A7E0B006CBC92 /* ContactViewController.h */,
 				ED4F8FC91C8A7E0B006CBC92 /* ContactViewController.m */,
+				ED4F902F1C8ABDE1006CBC92 /* CancelViewController.h */,
+				ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */,
+				ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */,
 			);
 			path = ContactViewController;
 			sourceTree = "<group>";
@@ -436,6 +452,8 @@
 		ED4F901E1C8A9ADC006CBC92 /* ContactView */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F902C1C8ABB8A006CBC92 /* MZTimerLabel.h */,
+				ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */,
 				ED4F901F1C8A9ADC006CBC92 /* TYDotIndicatorView.h */,
 				ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */,
 			);
@@ -561,6 +579,7 @@
 				ED1209701C829A1A00F80A18 /* myLogo.png in Resources */,
 				ED1209011C81EA6A00F80A18 /* LaunchScreen.storyboard in Resources */,
 				ED1208FE1C81EA6A00F80A18 /* Assets.xcassets in Resources */,
+				ED4F90331C8ABDE1006CBC92 /* CancelViewController.xib in Resources */,
 				ED1208FC1C81EA6A00F80A18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED120A1A1C83077F00F80A18 /* UINavigationBar+Awesome.m in Sources */,
+				ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */,
 				ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */,
 				ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */,
 				ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */,
@@ -643,6 +663,7 @@
 				ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */,
 				ED4F8FD11C8A7E0B006CBC92 /* ContactViewController.m in Sources */,
 				ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */,
+				ED4F90281C8AB870006CBC92 /* UIViewController+CWPopup.m in Sources */,
 				ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */,
 				ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */,
 				ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */,
@@ -654,6 +675,7 @@
 				ED1209371C8223B200F80A18 /* UIViewController+HUD.m in Sources */,
 				ED1208F31C81EA6A00F80A18 /* main.m in Sources */,
 				ED4F8FDB1C8A7E73006CBC92 /* CZCountDownView.m in Sources */,
+				ED4F90321C8ABDE1006CBC92 /* CancelViewController.m in Sources */,
 				ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
