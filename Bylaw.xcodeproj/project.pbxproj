@@ -35,10 +35,7 @@
 		ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */; };
 		ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */; };
 		ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */; };
-		ED4F90281C8AB870006CBC92 /* UIViewController+CWPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90271C8AB870006CBC92 /* UIViewController+CWPopup.m */; };
 		ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */; };
-		ED4F90321C8ABDE1006CBC92 /* CancelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */; };
-		ED4F90331C8ABDE1006CBC92 /* CancelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */; };
 		ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90361C8AF24C006CBC92 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -117,13 +114,8 @@
 		ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDotIndicatorView.m; sourceTree = "<group>"; };
 		ED4F90231C8AAC4C006CBC92 /* FindLawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLawerViewController.h; sourceTree = "<group>"; };
 		ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindLawerViewController.m; sourceTree = "<group>"; };
-		ED4F90261C8AB870006CBC92 /* UIViewController+CWPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CWPopup.h"; sourceTree = "<group>"; };
-		ED4F90271C8AB870006CBC92 /* UIViewController+CWPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CWPopup.m"; sourceTree = "<group>"; };
 		ED4F902C1C8ABB8A006CBC92 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
-		ED4F902F1C8ABDE1006CBC92 /* CancelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelViewController.h; sourceTree = "<group>"; };
-		ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelViewController.m; sourceTree = "<group>"; };
-		ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelViewController.xib; sourceTree = "<group>"; };
 		ED4F90351C8AF24C006CBC92 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		ED4F90361C8AF24C006CBC92 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,8 +277,6 @@
 		ED1209291C821D9000F80A18 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				ED4F90261C8AB870006CBC92 /* UIViewController+CWPopup.h */,
-				ED4F90271C8AB870006CBC92 /* UIViewController+CWPopup.m */,
 				ED120A181C83077F00F80A18 /* UINavigationBar+Awesome.h */,
 				ED120A191C83077F00F80A18 /* UINavigationBar+Awesome.m */,
 				ED1209351C8223B200F80A18 /* UIViewController+HUD.h */,
@@ -402,9 +392,6 @@
 			children = (
 				ED4F8FC81C8A7E0B006CBC92 /* ContactViewController.h */,
 				ED4F8FC91C8A7E0B006CBC92 /* ContactViewController.m */,
-				ED4F902F1C8ABDE1006CBC92 /* CancelViewController.h */,
-				ED4F90301C8ABDE1006CBC92 /* CancelViewController.m */,
-				ED4F90311C8ABDE1006CBC92 /* CancelViewController.xib */,
 			);
 			path = ContactViewController;
 			sourceTree = "<group>";
@@ -592,7 +579,6 @@
 				ED1209701C829A1A00F80A18 /* myLogo.png in Resources */,
 				ED1209011C81EA6A00F80A18 /* LaunchScreen.storyboard in Resources */,
 				ED1208FE1C81EA6A00F80A18 /* Assets.xcassets in Resources */,
-				ED4F90331C8ABDE1006CBC92 /* CancelViewController.xib in Resources */,
 				ED1208FC1C81EA6A00F80A18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,7 +663,6 @@
 				ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */,
 				ED4F8FD11C8A7E0B006CBC92 /* ContactViewController.m in Sources */,
 				ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */,
-				ED4F90281C8AB870006CBC92 /* UIViewController+CWPopup.m in Sources */,
 				ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */,
 				ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */,
 				ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */,
@@ -689,7 +674,6 @@
 				ED1209371C8223B200F80A18 /* UIViewController+HUD.m in Sources */,
 				ED1208F31C81EA6A00F80A18 /* main.m in Sources */,
 				ED4F8FDB1C8A7E73006CBC92 /* CZCountDownView.m in Sources */,
-				ED4F90321C8ABDE1006CBC92 /* CancelViewController.m in Sources */,
 				ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,14 +817,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bylaw/Bylaw.pch";
 				INFOPLIST_FILE = Bylaw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xrg.Bylaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -850,14 +832,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bylaw/Bylaw.pch";
 				INFOPLIST_FILE = Bylaw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xrg.Bylaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

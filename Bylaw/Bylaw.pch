@@ -67,8 +67,6 @@
 
 /** 内容 */
 #define Text_Font [UIFont systemFontOfSize:17]
-
-
 #define DARKGRYCOLOR [UIColor darkGrayColor]
 
 

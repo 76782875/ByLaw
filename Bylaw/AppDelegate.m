@@ -11,7 +11,6 @@
 #import "LeftTableViewController.h"
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h"
-#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -25,6 +24,8 @@
 //    UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];
 //    
 //    UIViewController * centerViewController = [[HomeViewController alloc]init];
+//    
+//    
 //    
 //    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
 //    
@@ -41,22 +42,10 @@
 //    [self.window setRootViewController:drawerController];
 //    // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    [self.window makeKeyAndVisible];
+//    [self.window makeKeyAndVisible];
     return YES;
    
-        return YES;
-
-
-
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

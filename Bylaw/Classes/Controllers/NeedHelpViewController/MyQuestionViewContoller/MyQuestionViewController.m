@@ -18,6 +18,7 @@
     [super viewDidLoad];
     UIView *quesView=[UIView new];
     quesView.backgroundColor=YellowColor;
+    
     [self.view addSubview:quesView];
     
     

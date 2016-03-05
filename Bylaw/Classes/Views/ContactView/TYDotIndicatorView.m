@@ -9,7 +9,7 @@
 #import "TYDotIndicatorView.h"
 
 
-static const CGFloat dotSeparatorDistance = 12.0f;
+//static const CGFloat dotSeparatorDistance = 12.0f;
 
 @interface TYDotIndicatorView ()
 

@@ -11,8 +11,8 @@
 #import "TYDotIndicatorView.h"
 #import "AgreeViewController.h"
 #import "MZTimerLabel.h"
-#import "CancelViewController.h"
-#import "UIViewController+CWPopup.h"
+
+
 #define TimeCout 10
 @interface ContactViewController ()
 {
