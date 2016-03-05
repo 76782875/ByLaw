@@ -18,10 +18,6 @@
     [super viewDidLoad];
     UIView *quesView=[UIView new];
     quesView.backgroundColor=YellowColor;
-    [[quesView layer] setShadowOffset:CGSizeMake(1, 1)];
-    [[quesView layer] setShadowRadius:5];
-    [[quesView layer] setShadowOpacity:1];
-    [[quesView layer] setShadowColor:[UIColor darkGrayColor].CGColor];
     [self.view addSubview:quesView];
     
     

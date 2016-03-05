@@ -11,6 +11,7 @@
 #import "LeftTableViewController.h"
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h"
+#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,31 +22,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];
+//    UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];
+//    
+//    UIViewController * centerViewController = [[HomeViewController alloc]init];
+//    
+//    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
+//    
+//    MMDrawerController * drawerController = [[MMDrawerController alloc]
+//                                             initWithCenterViewController:navigationController
+//                                             leftDrawerViewController:leftSideDrawerViewController
+//                                             rightDrawerViewController:nil];
+//    [drawerController setMaximumRightDrawerWidth:180.0];
+//    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+//    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+//    
+//    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    [self.window setRootViewController:drawerController];
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor whiteColor];
     
-    UIViewController * centerViewController = [[HomeViewController alloc]init];
     
     
     
-    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
-    
-    MMDrawerController * drawerController = [[MMDrawerController alloc]
-                                             initWithCenterViewController:navigationController
-                                             leftDrawerViewController:leftSideDrawerViewController
-                                             rightDrawerViewController:nil];
-    [drawerController setMaximumRightDrawerWidth:180.0];
-    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window setRootViewController:drawerController];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
    
         return YES;
+
+
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
