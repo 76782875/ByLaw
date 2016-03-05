@@ -1,0 +1,99 @@
+//
+//  Bylaw.pch
+//  Bylaw
+//
+//  Created by 小热狗 on 16/2/28.
+//  Copyright © 2016年 小热狗. All rights reserved.
+//
+
+#ifndef Bylaw_pch
+#define Bylaw_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Bylaw_pch */
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "UIImageView+AFNetworking.h"//网络图片加载
+#import <AFNetworking/AFNetworking.h>//网络请求
+#import "UIViewController+HUD.h"//进度条
+#import "IQKeyboardManager.h"//键盘自适应
+#import "APIDataService.h" // 管理所有接口的网络请求
+#import "APIRequest.h"//接口操作
+#import "APIList.h"//接口列表
+#import "BaseViewController.h"//基础控制器
+#import "UINavigationBar+Awesome.h"//navigationBar
+#import "UIView+SDAutoLayout.h"//自动布局
+//----------------------大小----------------------------
+
+/**获取屏幕 宽度、高度*/
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+/**NavBar高度*/
+#define NavigationBar_HEIGHT 44
+
+
+#define IS_IPHONE_5    (([[UIScreen mainScreen] bounds].size.height)>=568)
+
+#define MARGIN5 5
+#define MARGIN10 10
+#define MARGIN15 15
+#define MARGIN20 20
+
+
+
+
+//----------------------图片----------------------------
+
+/**定义UIImage对象*/
+#define ImageNamed(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+
+
+//----------------------字体--------------------------
+
+/** 标题 */
+#define Title_Font [UIFont systemFontOfSize:20]
+#define BLACKCOLOR [UIColor blackColor]
+
+/** 内容 */
+#define Text_Font [UIFont systemFontOfSize:17]
+#define DARKGRYCOLOR [UIColor darkGrayColor]
+
+
+
+//----------------------颜色类--------------------------
+
+/** 设置颜色RGB */
+#define RGB(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+/**背景色*/
+#define BACKGROUND_COLOR [UIColor colorWithRed:236.0/255.0 green:236.0/255.0 blue:236.0/255.0 alpha:1.0]
+
+
+/**清除背景色*/
+#define CLEARCOLOR [UIColor clearColor]
+
+/**黄色*/
+#define YellowColor [UIColor colorWithRed:246.0/255.0 green:213.0/255.0 blue:23.0/255.0 alpha:1.0]
+
+/** 颜色 */
+//列表背景颜色
+#define TableBackColor [UIColor colorWithRed:127.0/255.0 green:127.0/255.0 blue:127.0/255.0 alpha:1.0]
+
+
+
+
+
+
+
+
+
+#endif
