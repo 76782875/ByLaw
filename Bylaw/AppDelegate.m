@@ -27,6 +27,13 @@
     [self autoKeyboard];
     
    
+#pragma mark 监听网络状态
+    [MHAsiNetworkHandler startMonitoring];
+    
+    
+    
+    
+    
     
     
 //    UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];

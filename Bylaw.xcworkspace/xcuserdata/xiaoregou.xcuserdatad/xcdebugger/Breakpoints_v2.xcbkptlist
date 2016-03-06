@@ -153,29 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bylaw/Classes/Controllers/LoginRegiserViewController/LoginViewController.m"
-            timestampString = "478949359.06874"
+            filePath = "Bylaw/NetworkHandle/MHAsiNetworkHandler.m"
+            timestampString = "478951966.162776"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "-login"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bylaw/Classes/Controllers/LoginRegiserViewController/LoginViewController.m"
-            timestampString = "478949860.686072"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "-login"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "-conURL:networkType:params:delegate:showHUD:target:action:successBlock:failureBlock:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

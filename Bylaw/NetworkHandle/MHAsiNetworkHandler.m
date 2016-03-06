@@ -87,9 +87,12 @@
                 [MHAsiNetworkHandler sharedInstance].networkError = YES;
                 break;
             case AFNetworkReachabilityStatusReachableViaWWAN: // 手机自带网络
+                [MHAsiNetworkHandler sharedInstance].networkError=NO;
                 NSLog(@"手机自带网络");
                 break;
             case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
+                [MHAsiNetworkHandler sharedInstance].networkError=NO;
+
                 NSLog(@"WIFI");
                 break;
         }

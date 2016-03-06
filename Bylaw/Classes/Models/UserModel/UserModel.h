@@ -23,8 +23,6 @@
 @property(nonatomic,strong)NSString *companyFlag;//企业/个人 (1 ：企业 ， 0 ： 个人)
 
 
-+ (NSURLSessionDataTask *)globalTimelinePostsWithBlock:(void (^)(NSArray *posts, NSError *error))block;
 
-+ (NSURLSessionDataTask *)globalTimelinePostsWithBlock:(void (^)(NSArray *posts, NSError *error))block;
 
 @end

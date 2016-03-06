@@ -14,6 +14,8 @@
 		ED03BDEF1C8C2B1B004CF7BD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDEB1C8C2B1B004CF7BD /* Reachability.m */; };
 		ED03BDF91C8C2EE7004CF7BD /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDF61C8C2EE7004CF7BD /* MBProgressHUD+Add.m */; };
 		ED03BDFA1C8C2EE7004CF7BD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDF81C8C2EE7004CF7BD /* MBProgressHUD.m */; };
+		ED03BDFF1C8C3974004CF7BD /* TYDotIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDFB1C8C3974004CF7BD /* TYDotIndicatorView.m */; };
+		ED03BE001C8C3974004CF7BD /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDFD1C8C3974004CF7BD /* MZTimerLabel.m */; };
 		ED1208F31C81EA6A00F80A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1208F21C81EA6A00F80A18 /* main.m */; };
 		ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1208F51C81EA6A00F80A18 /* AppDelegate.m */; };
 		ED1208FC1C81EA6A00F80A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1208FA1C81EA6A00F80A18 /* Main.storyboard */; };
@@ -22,7 +24,6 @@
 		ED12090C1C81EA6A00F80A18 /* BylawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12090B1C81EA6A00F80A18 /* BylawTests.m */; };
 		ED1209171C81EA6A00F80A18 /* BylawUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209161C81EA6A00F80A18 /* BylawUITests.m */; };
 		ED1209371C8223B200F80A18 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209361C8223B200F80A18 /* UIViewController+HUD.m */; };
-		ED1209701C829A1A00F80A18 /* myLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12096F1C829A1A00F80A18 /* myLogo.png */; };
 		ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209861C82ADA100F80A18 /* BaseViewController.m */; };
 		ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12098D1C82B79F00F80A18 /* MyInfoViewController.m */; };
 		ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209901C82B7B100F80A18 /* SysMsgViewController.m */; };
@@ -36,9 +37,7 @@
 		ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FCF1C8A7E0B006CBC92 /* MyQuestionViewController.m */; };
 		ED4F8FDB1C8A7E73006CBC92 /* CZCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */; };
 		ED4F8FDC1C8A7E73006CBC92 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */; };
-		ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */; };
 		ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */; };
-		ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */; };
 		ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90361C8AF24C006CBC92 /* LoginViewController.m */; };
 		ED4F903A1C8B3D36006CBC92 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90391C8B3D36006CBC92 /* RegisterViewController.m */; };
 		ED4F90401C8B5047006CBC92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F903F1C8B5047006CBC92 /* CoreGraphics.framework */; };
@@ -88,6 +87,10 @@
 		ED03BDF61C8C2EE7004CF7BD /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		ED03BDF71C8C2EE7004CF7BD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		ED03BDF81C8C2EE7004CF7BD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		ED03BDFB1C8C3974004CF7BD /* TYDotIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDotIndicatorView.m; sourceTree = "<group>"; };
+		ED03BDFC1C8C3974004CF7BD /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		ED03BDFD1C8C3974004CF7BD /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		ED03BDFE1C8C3974004CF7BD /* TYDotIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDotIndicatorView.h; sourceTree = "<group>"; };
 		ED1208EE1C81EA6A00F80A18 /* Bylaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bylaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1208F21C81EA6A00F80A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED1208F41C81EA6A00F80A18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,7 +108,6 @@
 		ED1209241C8214F500F80A18 /* Bylaw.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bylaw.pch; sourceTree = "<group>"; };
 		ED1209351C8223B200F80A18 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
 		ED1209361C8223B200F80A18 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
-		ED12096F1C829A1A00F80A18 /* myLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLogo.png; sourceTree = "<group>"; };
 		ED1209851C82ADA100F80A18 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		ED1209861C82ADA100F80A18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		ED12098C1C82B79F00F80A18 /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
@@ -132,12 +134,8 @@
 		ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCountDownView.m; sourceTree = "<group>"; };
 		ED4F8FD91C8A7E73006CBC92 /* LeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
 		ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
-		ED4F901F1C8A9ADC006CBC92 /* TYDotIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDotIndicatorView.h; sourceTree = "<group>"; };
-		ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDotIndicatorView.m; sourceTree = "<group>"; };
 		ED4F90231C8AAC4C006CBC92 /* FindLawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLawerViewController.h; sourceTree = "<group>"; };
 		ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindLawerViewController.m; sourceTree = "<group>"; };
-		ED4F902C1C8ABB8A006CBC92 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
-		ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		ED4F90351C8AF24C006CBC92 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		ED4F90361C8AF24C006CBC92 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		ED4F90381C8B3D36006CBC92 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 		ED1208E51C81EA6A00F80A18 = {
 			isa = PBXGroup;
 			children = (
-				ED12096F1C829A1A00F80A18 /* myLogo.png */,
 				ED1208F01C81EA6A00F80A18 /* Bylaw */,
 				ED12090A1C81EA6A00F80A18 /* BylawTests */,
 				ED1209151C81EA6A00F80A18 /* BylawUITests */,
@@ -357,7 +354,6 @@
 		ED1209281C821D9000F80A18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ED4F901E1C8A9ADC006CBC92 /* ContactView */,
 				ED4F8FD41C8A7E73006CBC92 /* NeedHelpView */,
 				ED4F8FD81C8A7E73006CBC92 /* LeftTableView */,
 			);
@@ -496,6 +492,10 @@
 		ED4F8FD51C8A7E73006CBC92 /* ContactView */ = {
 			isa = PBXGroup;
 			children = (
+				ED03BDFB1C8C3974004CF7BD /* TYDotIndicatorView.m */,
+				ED03BDFC1C8C3974004CF7BD /* MZTimerLabel.h */,
+				ED03BDFD1C8C3974004CF7BD /* MZTimerLabel.m */,
+				ED03BDFE1C8C3974004CF7BD /* TYDotIndicatorView.h */,
 				ED4F8FD61C8A7E73006CBC92 /* CZCountDownView.h */,
 				ED4F8FD71C8A7E73006CBC92 /* CZCountDownView.m */,
 			);
@@ -509,17 +509,6 @@
 				ED4F8FDA1C8A7E73006CBC92 /* LeftCell.m */,
 			);
 			path = LeftTableView;
-			sourceTree = "<group>";
-		};
-		ED4F901E1C8A9ADC006CBC92 /* ContactView */ = {
-			isa = PBXGroup;
-			children = (
-				ED4F902C1C8ABB8A006CBC92 /* MZTimerLabel.h */,
-				ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */,
-				ED4F901F1C8A9ADC006CBC92 /* TYDotIndicatorView.h */,
-				ED4F90201C8A9ADC006CBC92 /* TYDotIndicatorView.m */,
-			);
-			path = ContactView;
 			sourceTree = "<group>";
 		};
 		ED4F90221C8AAC28006CBC92 /* FindLawerController */ = {
@@ -660,7 +649,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED1209701C829A1A00F80A18 /* myLogo.png in Resources */,
 				ED1209011C81EA6A00F80A18 /* LaunchScreen.storyboard in Resources */,
 				ED1208FE1C81EA6A00F80A18 /* Assets.xcassets in Resources */,
 				ED1208FC1C81EA6A00F80A18 /* Main.storyboard in Resources */,
@@ -738,14 +726,12 @@
 			files = (
 				ED120A1A1C83077F00F80A18 /* UINavigationBar+Awesome.m in Sources */,
 				ED03BDEE1C8C2B1B004CF7BD /* MHNetworkManager.m in Sources */,
-				ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */,
 				ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */,
 				ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */,
 				ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */,
 				ED82F25C1C8C01200047B557 /* UserInfoViewController.m in Sources */,
 				ED03BDEC1C8C2B1B004CF7BD /* MHAsiNetworkHandler.m in Sources */,
 				ED03BDFA1C8C2EE7004CF7BD /* MBProgressHUD.m in Sources */,
-				ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */,
 				ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */,
 				ED03BDEF1C8C2B1B004CF7BD /* Reachability.m in Sources */,
 				ED4F903A1C8B3D36006CBC92 /* RegisterViewController.m in Sources */,
@@ -756,7 +742,9 @@
 				ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */,
 				ED03BDED1C8C2B1B004CF7BD /* MHAsiNetworkItem.m in Sources */,
 				ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */,
+				ED03BE001C8C3974004CF7BD /* MZTimerLabel.m in Sources */,
 				ED82F25F1C8C03250047B557 /* UserModel.m in Sources */,
+				ED03BDFF1C8C3974004CF7BD /* TYDotIndicatorView.m in Sources */,
 				ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */,
 				ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */,
 				ED1209941C82B7C300F80A18 /* AccManViewController.m in Sources */,
