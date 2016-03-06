@@ -11,6 +11,7 @@
 #import "LeftTableViewController.h"
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h"
+#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -31,33 +32,21 @@
     [MHAsiNetworkHandler startMonitoring];
     
     
+#pragma mark 注册登录状态监听
+    [self loginRegisterListen];
+    
+ 
+ #pragma mark 判断是否登录
+    [self isLogin];
     
     
     
     
     
-//    UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];
-//    
-//    UIViewController * centerViewController = [[HomeViewController alloc]init];
-//    
-//    
-//    
-//    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
-//    
-//    MMDrawerController * drawerController = [[MMDrawerController alloc]
-//                                             initWithCenterViewController:navigationController
-//                                             leftDrawerViewController:leftSideDrawerViewController
-//                                             rightDrawerViewController:nil];
-//    [drawerController setMaximumRightDrawerWidth:180.0];
-//    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-//    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-//    
-//    
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    [self.window setRootViewController:drawerController];
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+    
+    
+      // Override point for customization after application launch.
+    
     return YES;
    
     
@@ -84,6 +73,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
+
+
 /**
  *  键盘自动布局
  */
@@ -106,6 +100,131 @@
     
     //Giving permission to modify TextView's frame
     [[IQKeyboardManager sharedManager] setCanAdjustTextView:YES];
+    
+    
+}
+
+/**
+ *  注册登录状态监听
+ */
+-(void)loginRegisterListen{
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(loginStateChange:)
+                                                 name:KNOTIFICATION_LOGIN  object:@YES];
+
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(loginStateChange:)
+                                                 name:KNOTIFICATION_LOGOUT  object:@NO];
+
+}
+
+
+/**
+ *  注册登录状态监听事件
+ */
+- (void)loginStateChange:(NSNotification *)notification
+{
+    
+     BOOL loginSuccess = [notification.object boolValue];
+    if (loginSuccess)
+    {
+    //登录成功
+    [self saveLoginInfo];//保存登录数据到本地
+    
+    }else{
+    //退出
+        [self removLoginInfo];//移除本地数据
+    
+    }
+    
+}
+
+
+/**
+ *  保存登录数据到本地
+ */
+-(void)saveLoginInfo{
+    //获取userDefault单例
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //登陆成功后把用户名和密码存储到UserDefault
+    [userDefaults setObject:[SLClient sharedClient].user.username forKey:@"name"];
+    [userDefaults setObject:[SLClient sharedClient].user.password forKey:@"password"];
+    [userDefaults setObject:@"YES" forKey:@"loginState"];
+    [userDefaults synchronize];
+    [self isLogin];
+
+}
+
+
+/**
+ *  移除本地数据
+ */
+-(void)removLoginInfo{
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //移除UserDefaults中存储的用户信息
+    [userDefaults removeObjectForKey:@"name"];
+    [userDefaults removeObjectForKey:@"password"];
+    [userDefaults removeObjectForKey:@"loginState"];
+    [userDefaults synchronize];
+    [self isLogin];
+
+    
+}
+/**
+ *  判断是否登录
+ */
+-(void)isLogin{
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *isLogin= [userDefault objectForKey:@"loginState"];
+    
+    UIViewController *rootController = nil;
+    if ([isLogin isEqualToString:@"YES"]) {
+      // 已经登录
+        if (self.drawerController==nil) {
+            UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];
+            
+            UIViewController * centerViewController = [[HomeViewController alloc]init];
+            
+            UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
+            
+            self.drawerController = [[MMDrawerController alloc]
+                                     initWithCenterViewController:navigationController
+                                     leftDrawerViewController:leftSideDrawerViewController
+                                     rightDrawerViewController:nil];
+            [self.drawerController setMaximumRightDrawerWidth:180.0];
+            [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+            [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+            rootController=self.drawerController;
+              NSLog(@"加载主页");
+        }else{
+            
+            rootController=self.drawerController;
+            NSLog(@"加载登录页");
+            
+        }
+        
+        
+    
+    
+    
+    }else{
+        //未登录
+        self.drawerController = nil;
+        LoginViewController *loginVC=[LoginViewController new];
+        rootController=loginVC;
+    
+    }
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:rootController];
+    self.window.backgroundColor =BACKGROUND_COLOR;
+    [self.window makeKeyAndVisible];
     
     
 }

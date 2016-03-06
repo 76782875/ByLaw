@@ -23,7 +23,7 @@
 
 
 #pragma mark 发送验证码
-#define SendMsgUrl @"sendMessage.action"
+#define SendMsgUrl POST_INTERFACE(@"sendMessage.action")
 
 #pragma mark 图片上传
 #define FileUploadUrl @"uploadMany.zengxin"

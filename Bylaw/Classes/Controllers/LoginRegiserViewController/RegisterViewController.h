@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RegisterViewController : UIViewController
+
 @property(nonatomic,strong)UITextField *phoneTextField;
 @property(nonatomic,strong)UITextField *codeTextField;
+@property(nonatomic,strong)NSString *msgCode;
+
 @end

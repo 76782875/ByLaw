@@ -30,6 +30,7 @@
 #import "UIView+SDAutoLayout.h"//自动布局
 #import "MHNetwrok.h"//网络请求
 #import "MJExtension.h"//Json-Object
+#import "SLClient.h"
 //----------------------大小----------------------------
 
 /**获取屏幕 宽度、高度*/
@@ -92,10 +93,19 @@
 
 
 
+//----------------------其他--------------------------
+
+/** 登录状态 */
+#define KNOTIFICATION_LOGIN @"loginIn"
+
+/** 退出状态 */
+#define KNOTIFICATION_LOGOUT @"loginOut"
 
 
 
 
-
-
+/**
+ *  最近一次的登录名字
+ */
+#define LastUserName @"lastUserName"
 #endif

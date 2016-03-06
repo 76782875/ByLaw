@@ -50,6 +50,7 @@
     self.usernameTextField=[UITextField new];
     self.usernameTextField.backgroundColor=[UIColor whiteColor];
     self.usernameTextField.layer.borderWidth = 1;
+    self.usernameTextField.text=[self getLastLoginUsername];
     self.usernameTextField.layer.borderColor = YellowColor.CGColor;
     self.usernameTextField.layer.cornerRadius=10;
     self.usernameTextField.autoresizingMask=YES;
@@ -165,7 +166,7 @@
  */
 -(void)login{
     
-    //      __weak typeof(self)weakSelf = self;
+          __weak typeof(self)weakSelf = self;
     
     NSDictionary *postDic = @{@"usercfg.username":self.usernameTextField.text,
                               @"usercfg.password":self.passwordTextField.text};
@@ -174,8 +175,31 @@
     [MHNetworkManager postReqeustWithURL:LoginUrl params:postDic successBlock:^(id returnData,int code,NSString *msg) {
         
         NSDictionary *dic=[[returnData objectForKey:@"jsonDataBean"] objectForKey:@"result"];
-        UserModel *userModel = [UserModel mj_objectWithKeyValues:dic];
+        NSString *judgeCode=[[returnData objectForKey:@"jsonDataBean"] objectForKey:@"code"];
+        if ([judgeCode isEqualToString:@"1"]) {
+            //登录成功
+           
+            //获取个人信息
+            [SLClient sharedClient].user=[UserModel mj_objectWithKeyValues:dic];
+            
+            
+            //已经登录
+            [SLClient sharedClient].isLogin=@"YES";
+            
+          
+            //发送自动登陆状态通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGIN object:@YES];
+            
+            
+            //保存最近一次登录用户名
+            [weakSelf saveLastLoginUsername];
         
+         
+        
+        
+        }
+
+               
         NSLog(@"----%@",returnData);
         
     } failureBlock:^(NSError *error) {
@@ -199,10 +223,32 @@
 }
 
 
-
-
-
-
+/**
+ *  保存登录信息
+ */
+- (void)saveLastLoginUsername
+{
+    NSString *username = [[SLClient sharedClient] currentUsername];
+    if (username && username.length > 0) {
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        [ud setObject:username forKey:[NSString stringWithFormat:LastUserName]];
+        [ud synchronize];
+    }
+}
+/**
+ *  获取上次的登录名
+ */
+-(NSString *)getLastLoginUsername{
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *lastUsername=[userDefault objectForKey:LastUserName];
+    if (lastUsername==nil) {
+        return @"";
+    }
+    
+    return lastUsername;
+    
+}
 
 
 - (void)didReceiveMemoryWarning {

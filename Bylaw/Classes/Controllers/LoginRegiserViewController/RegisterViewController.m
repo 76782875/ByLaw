@@ -9,7 +9,9 @@
 #import "RegisterViewController.h"
 
 @interface RegisterViewController ()
-
+{
+    UIButton *codeBtn;
+}
 @end
 
 @implementation RegisterViewController
@@ -76,16 +78,17 @@
     self.codeTextField.autoresizingMask=YES;
     [self.view addSubview:self.codeTextField];
     
-    UIButton *codeBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    codeBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [codeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
     codeBtn.backgroundColor=YellowColor;
-    codeBtn.titleLabel.font=[UIFont systemFontOfSize:14];
+    [codeBtn addTarget:self action:@selector(reciveCode) forControlEvents:UIControlEventTouchUpInside];
+    codeBtn.titleLabel.font=[UIFont systemFontOfSize:12];
     codeBtn.layer.cornerRadius=10;
     codeBtn.autoresizingMask=YES;
     [codeBtn setTitleColor:DARKGRYCOLOR forState:UIControlStateNormal];
     [self.view addSubview:codeBtn];
     
-    
+   
     UILabel *clauseLabel=[UILabel new];
     clauseLabel.backgroundColor=CLEARCOLOR;
     clauseLabel.font=[UIFont systemFontOfSize:12];
@@ -98,7 +101,7 @@
     UIButton *nextStepBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [nextStepBtn setTitle:@"下一步" forState:UIControlStateNormal];
     nextStepBtn.backgroundColor=YellowColor;
-    nextStepBtn.titleLabel.font=[UIFont systemFontOfSize:14];
+    nextStepBtn.titleLabel.font=[UIFont systemFontOfSize:12];
     [nextStepBtn addTarget:self action:@selector(registerNextSetp) forControlEvents:UIControlEventTouchUpInside];
     [nextStepBtn setTitleColor:DARKGRYCOLOR forState:UIControlStateNormal];
     [self.view addSubview:nextStepBtn];
@@ -193,6 +196,39 @@
 -(void)reciveCode{
     
     
+    
+    
+    __block int timeout=30; //倒计时时间
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+        if(timeout<=0){ //倒计时结束，关闭
+            dispatch_source_cancel(_timer);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //设置界面的按钮显示 根据自己需求设置
+                [codeBtn setTitle:@"发送验证码" forState:UIControlStateNormal];
+                codeBtn.userInteractionEnabled = YES;
+            });
+        }else{
+            //            int minutes = timeout / 60;
+            int seconds = timeout % 60;
+            NSString *strTime = [NSString stringWithFormat:@"%.2d", seconds];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //设置界面的按钮显示 根据自己需求设置
+                
+                [codeBtn setTitle:[NSString stringWithFormat:@"%@秒后重新发送",strTime] forState:UIControlStateNormal];
+                codeBtn.userInteractionEnabled = NO;
+                
+            });
+            timeout--;
+            
+        }
+    });
+    dispatch_resume(_timer);
+
+    [self postServerForCode];
+    
 }
 
 /**
@@ -204,6 +240,32 @@
     
 }
 
+/**
+ *  请求验证码
+ */
+-(void)postServerForCode{
+   
+    
+    NSDictionary *postDic = @{@"tel":self.phoneTextField.text};
+    
+    
+    [MHNetworkManager postReqeustWithURL:SendMsgUrl params:postDic successBlock:^(id returnData,int code,NSString *msg) {
+        
+        NSDictionary *dic=[[returnData objectForKey:@"jsonDataBean"] objectForKey:@"result"];
+        NSString *judgeCode=[[returnData objectForKey:@"jsonDataBean"] objectForKey:@"code"];
+        if ([judgeCode isEqualToString:@"1"]) {
+            self.msgCode=[dic objectForKey:@"code"];
+        
+        NSLog(@"----%@",returnData);
+        }
+    } failureBlock:^(NSError *error) {
+        
+        NSLog(@"-----%@",error.localizedDescription);
+        
+    } showHUD:YES];
+
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

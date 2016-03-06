@@ -16,6 +16,7 @@
 		ED03BDFA1C8C2EE7004CF7BD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDF81C8C2EE7004CF7BD /* MBProgressHUD.m */; };
 		ED03BDFF1C8C3974004CF7BD /* TYDotIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDFB1C8C3974004CF7BD /* TYDotIndicatorView.m */; };
 		ED03BE001C8C3974004CF7BD /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDFD1C8C3974004CF7BD /* MZTimerLabel.m */; };
+		ED03BE041C8C5EB2004CF7BD /* SLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BE031C8C5EB2004CF7BD /* SLClient.m */; };
 		ED1208F31C81EA6A00F80A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1208F21C81EA6A00F80A18 /* main.m */; };
 		ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1208F51C81EA6A00F80A18 /* AppDelegate.m */; };
 		ED1208FC1C81EA6A00F80A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1208FA1C81EA6A00F80A18 /* Main.storyboard */; };
@@ -91,6 +92,8 @@
 		ED03BDFC1C8C3974004CF7BD /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		ED03BDFD1C8C3974004CF7BD /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		ED03BDFE1C8C3974004CF7BD /* TYDotIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDotIndicatorView.h; sourceTree = "<group>"; };
+		ED03BE021C8C5EB2004CF7BD /* SLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLClient.h; sourceTree = "<group>"; };
+		ED03BE031C8C5EB2004CF7BD /* SLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLClient.m; sourceTree = "<group>"; };
 		ED1208EE1C81EA6A00F80A18 /* Bylaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bylaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1208F21C81EA6A00F80A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED1208F41C81EA6A00F80A18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -250,6 +253,15 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		ED03BE011C8C5E8F004CF7BD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ED03BE021C8C5EB2004CF7BD /* SLClient.h */,
+				ED03BE031C8C5EB2004CF7BD /* SLClient.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		ED1208E51C81EA6A00F80A18 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +287,7 @@
 		ED1208F01C81EA6A00F80A18 /* Bylaw */ = {
 			isa = PBXGroup;
 			children = (
+				ED03BE011C8C5E8F004CF7BD /* Helper */,
 				ED03BDF31C8C2EE7004CF7BD /* Libs */,
 				ED03BDDE1C8C2B1B004CF7BD /* NetworkHandle */,
 				ED1209251C821D9000F80A18 /* Classes */,
@@ -733,6 +746,7 @@
 				ED03BDEC1C8C2B1B004CF7BD /* MHAsiNetworkHandler.m in Sources */,
 				ED03BDFA1C8C2EE7004CF7BD /* MBProgressHUD.m in Sources */,
 				ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */,
+				ED03BE041C8C5EB2004CF7BD /* SLClient.m in Sources */,
 				ED03BDEF1C8C2B1B004CF7BD /* Reachability.m in Sources */,
 				ED4F903A1C8B3D36006CBC92 /* RegisterViewController.m in Sources */,
 				ED4F8FD21C8A7E0B006CBC92 /* HomeViewController.m in Sources */,

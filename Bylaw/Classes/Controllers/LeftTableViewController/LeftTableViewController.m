@@ -66,6 +66,7 @@
     exitBtn.titleLabel.font=[UIFont systemFontOfSize:17];
     exitBtn.backgroundColor=[UIColor darkGrayColor];
     [exitBtn setTitle:@"退出" forState:UIControlStateNormal];
+    [exitBtn addTarget:self action:@selector(exitLogin) forControlEvents:UIControlEventTouchUpInside];
     [exitBtn setTitleColor:YellowColor forState:UIControlStateNormal];
     exitBtn.contentEdgeInsets=UIEdgeInsetsMake(0, -147, 0, 30);
     self.tableView.tableFooterView=exitBtn;
@@ -209,8 +210,14 @@
     cell.backgroundColor = [UIColor clearColor];
 }
 
+/**
+ *  退出登录
+ */
+-(void)exitLogin{
+    //发送自动登陆状态通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGOUT object:@NO];
 
-
+}
 
 - (void)didReceiveMemoryWarning {
     
