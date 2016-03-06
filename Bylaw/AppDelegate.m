@@ -21,6 +21,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    
+#pragma mark 键盘自动布局
+    [self autoKeyboard];
+    
+   
+    
+    
 //    UIViewController * leftSideDrawerViewController = [[LeftTableViewController alloc] init];
 //    
 //    UIViewController * centerViewController = [[HomeViewController alloc]init];
@@ -68,6 +76,31 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+/**
+ *  键盘自动布局
+ */
+-(void)autoKeyboard{
+    
+    //Enabling keyboard manager
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    
+    [[IQKeyboardManager sharedManager] setKeyboardDistanceFromTextField:0];
+    //Enabling autoToolbar behaviour. If It is set to NO. You have to manually create UIToolbar for keyboard.
+    
+    
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
+    
+    //Setting toolbar behavious to IQAutoToolbarBySubviews. Set it to IQAutoToolbarByTag to manage previous/next according to UITextField's tag property in increasing order.
+    [[IQKeyboardManager sharedManager] setToolbarManageBehaviour:IQAutoToolbarBySubviews];
+    
+    //Resign textField if touched outside of UITextField/UITextView.
+    [[IQKeyboardManager sharedManager] setShouldResignOnTouchOutside:YES];
+    
+    //Giving permission to modify TextView's frame
+    [[IQKeyboardManager sharedManager] setCanAdjustTextView:YES];
+    
+    
 }
 
 @end

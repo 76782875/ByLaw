@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		379A639497C231A3C131E4D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 141DA681D1EFEBC62352C536 /* libPods.a */; };
+		ED03BDEC1C8C2B1B004CF7BD /* MHAsiNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDE21C8C2B1B004CF7BD /* MHAsiNetworkHandler.m */; };
+		ED03BDED1C8C2B1B004CF7BD /* MHAsiNetworkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDE41C8C2B1B004CF7BD /* MHAsiNetworkItem.m */; };
+		ED03BDEE1C8C2B1B004CF7BD /* MHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDE71C8C2B1B004CF7BD /* MHNetworkManager.m */; };
+		ED03BDEF1C8C2B1B004CF7BD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDEB1C8C2B1B004CF7BD /* Reachability.m */; };
+		ED03BDF91C8C2EE7004CF7BD /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDF61C8C2EE7004CF7BD /* MBProgressHUD+Add.m */; };
+		ED03BDFA1C8C2EE7004CF7BD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03BDF81C8C2EE7004CF7BD /* MBProgressHUD.m */; };
 		ED1208F31C81EA6A00F80A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1208F21C81EA6A00F80A18 /* main.m */; };
 		ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1208F51C81EA6A00F80A18 /* AppDelegate.m */; };
 		ED1208FC1C81EA6A00F80A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1208FA1C81EA6A00F80A18 /* Main.storyboard */; };
@@ -15,9 +21,6 @@
 		ED1209011C81EA6A00F80A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1208FF1C81EA6A00F80A18 /* LaunchScreen.storyboard */; };
 		ED12090C1C81EA6A00F80A18 /* BylawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12090B1C81EA6A00F80A18 /* BylawTests.m */; };
 		ED1209171C81EA6A00F80A18 /* BylawUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209161C81EA6A00F80A18 /* BylawUITests.m */; };
-		ED12092E1C82223100F80A18 /* ApiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12092D1C82223100F80A18 /* ApiRequest.m */; };
-		ED1209311C82225500F80A18 /* ApiList.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209301C82225500F80A18 /* ApiList.m */; };
-		ED1209341C82227900F80A18 /* ApiDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209331C82227900F80A18 /* ApiDataService.m */; };
 		ED1209371C8223B200F80A18 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209361C8223B200F80A18 /* UIViewController+HUD.m */; };
 		ED1209701C829A1A00F80A18 /* myLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12096F1C829A1A00F80A18 /* myLogo.png */; };
 		ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1209861C82ADA100F80A18 /* BaseViewController.m */; };
@@ -37,6 +40,14 @@
 		ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90241C8AAC4C006CBC92 /* FindLawerViewController.m */; };
 		ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */; };
 		ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90361C8AF24C006CBC92 /* LoginViewController.m */; };
+		ED4F903A1C8B3D36006CBC92 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F90391C8B3D36006CBC92 /* RegisterViewController.m */; };
+		ED4F90401C8B5047006CBC92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F903F1C8B5047006CBC92 /* CoreGraphics.framework */; };
+		ED4F90421C8B5079006CBC92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F90411C8B5079006CBC92 /* Foundation.framework */; };
+		ED4F90441C8B5085006CBC92 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F90431C8B5085006CBC92 /* MobileCoreServices.framework */; };
+		ED4F90461C8B508B006CBC92 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F90451C8B508B006CBC92 /* Security.framework */; };
+		ED4F90481C8B5094006CBC92 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F90471C8B5094006CBC92 /* SystemConfiguration.framework */; };
+		ED82F25C1C8C01200047B557 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED82F25B1C8C01200047B557 /* UserInfoViewController.m */; };
+		ED82F25F1C8C03250047B557 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED82F25E1C8C03250047B557 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +71,23 @@
 		141DA681D1EFEBC62352C536 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F700F371E5A1D3FF85743 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DBBA591396C7EA5B809ACCB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ED03BDDD1C8C289C004CF7BD /* BaseAPIList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAPIList.h; sourceTree = "<group>"; };
+		ED03BDDF1C8C2B1B004CF7BD /* MHAsiNetworkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAsiNetworkDefine.h; sourceTree = "<group>"; };
+		ED03BDE01C8C2B1B004CF7BD /* MHAsiNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAsiNetworkDelegate.h; sourceTree = "<group>"; };
+		ED03BDE11C8C2B1B004CF7BD /* MHAsiNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAsiNetworkHandler.h; sourceTree = "<group>"; };
+		ED03BDE21C8C2B1B004CF7BD /* MHAsiNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAsiNetworkHandler.m; sourceTree = "<group>"; };
+		ED03BDE31C8C2B1B004CF7BD /* MHAsiNetworkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAsiNetworkItem.h; sourceTree = "<group>"; };
+		ED03BDE41C8C2B1B004CF7BD /* MHAsiNetworkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAsiNetworkItem.m; sourceTree = "<group>"; };
+		ED03BDE51C8C2B1B004CF7BD /* MHAsiNetworkUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAsiNetworkUrl.h; sourceTree = "<group>"; };
+		ED03BDE61C8C2B1B004CF7BD /* MHNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNetworkManager.h; sourceTree = "<group>"; };
+		ED03BDE71C8C2B1B004CF7BD /* MHNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNetworkManager.m; sourceTree = "<group>"; };
+		ED03BDE81C8C2B1B004CF7BD /* MHNetwrok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNetwrok.h; sourceTree = "<group>"; };
+		ED03BDEA1C8C2B1B004CF7BD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		ED03BDEB1C8C2B1B004CF7BD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		ED03BDF51C8C2EE7004CF7BD /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		ED03BDF61C8C2EE7004CF7BD /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		ED03BDF71C8C2EE7004CF7BD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		ED03BDF81C8C2EE7004CF7BD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		ED1208EE1C81EA6A00F80A18 /* Bylaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bylaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1208F21C81EA6A00F80A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED1208F41C81EA6A00F80A18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,12 +103,6 @@
 		ED1209161C81EA6A00F80A18 /* BylawUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BylawUITests.m; sourceTree = "<group>"; };
 		ED1209181C81EA6A00F80A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED1209241C8214F500F80A18 /* Bylaw.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bylaw.pch; sourceTree = "<group>"; };
-		ED12092C1C82223100F80A18 /* ApiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRequest.h; sourceTree = "<group>"; };
-		ED12092D1C82223100F80A18 /* ApiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRequest.m; sourceTree = "<group>"; };
-		ED12092F1C82225500F80A18 /* ApiList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiList.h; sourceTree = "<group>"; };
-		ED1209301C82225500F80A18 /* ApiList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiList.m; sourceTree = "<group>"; };
-		ED1209321C82227900F80A18 /* ApiDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiDataService.h; sourceTree = "<group>"; };
-		ED1209331C82227900F80A18 /* ApiDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiDataService.m; sourceTree = "<group>"; };
 		ED1209351C8223B200F80A18 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
 		ED1209361C8223B200F80A18 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 		ED12096F1C829A1A00F80A18 /* myLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLogo.png; sourceTree = "<group>"; };
@@ -118,6 +140,17 @@
 		ED4F902D1C8ABB8A006CBC92 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		ED4F90351C8AF24C006CBC92 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		ED4F90361C8AF24C006CBC92 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		ED4F90381C8B3D36006CBC92 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		ED4F90391C8B3D36006CBC92 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		ED4F903F1C8B5047006CBC92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ED4F90411C8B5079006CBC92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ED4F90431C8B5085006CBC92 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ED4F90451C8B508B006CBC92 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED4F90471C8B5094006CBC92 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ED82F25A1C8C01200047B557 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		ED82F25B1C8C01200047B557 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		ED82F25D1C8C03250047B557 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		ED82F25E1C8C03250047B557 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +158,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4F90481C8B5094006CBC92 /* SystemConfiguration.framework in Frameworks */,
+				ED4F90461C8B508B006CBC92 /* Security.framework in Frameworks */,
+				ED4F90441C8B5085006CBC92 /* MobileCoreServices.framework in Frameworks */,
+				ED4F90421C8B5079006CBC92 /* Foundation.framework in Frameworks */,
+				ED4F90401C8B5047006CBC92 /* CoreGraphics.framework in Frameworks */,
 				379A639497C231A3C131E4D4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,9 +196,60 @@
 		D9C057194BD2E4DE35A8AE31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED4F90471C8B5094006CBC92 /* SystemConfiguration.framework */,
+				ED4F90451C8B508B006CBC92 /* Security.framework */,
+				ED4F90431C8B5085006CBC92 /* MobileCoreServices.framework */,
+				ED4F90411C8B5079006CBC92 /* Foundation.framework */,
+				ED4F903F1C8B5047006CBC92 /* CoreGraphics.framework */,
 				141DA681D1EFEBC62352C536 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED03BDDE1C8C2B1B004CF7BD /* NetworkHandle */ = {
+			isa = PBXGroup;
+			children = (
+				ED03BDDF1C8C2B1B004CF7BD /* MHAsiNetworkDefine.h */,
+				ED03BDE01C8C2B1B004CF7BD /* MHAsiNetworkDelegate.h */,
+				ED03BDE11C8C2B1B004CF7BD /* MHAsiNetworkHandler.h */,
+				ED03BDE21C8C2B1B004CF7BD /* MHAsiNetworkHandler.m */,
+				ED03BDE31C8C2B1B004CF7BD /* MHAsiNetworkItem.h */,
+				ED03BDE41C8C2B1B004CF7BD /* MHAsiNetworkItem.m */,
+				ED03BDE51C8C2B1B004CF7BD /* MHAsiNetworkUrl.h */,
+				ED03BDE61C8C2B1B004CF7BD /* MHNetworkManager.h */,
+				ED03BDE71C8C2B1B004CF7BD /* MHNetworkManager.m */,
+				ED03BDE81C8C2B1B004CF7BD /* MHNetwrok.h */,
+				ED03BDE91C8C2B1B004CF7BD /* Reachability */,
+			);
+			path = NetworkHandle;
+			sourceTree = "<group>";
+		};
+		ED03BDE91C8C2B1B004CF7BD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				ED03BDEA1C8C2B1B004CF7BD /* Reachability.h */,
+				ED03BDEB1C8C2B1B004CF7BD /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		ED03BDF31C8C2EE7004CF7BD /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				ED03BDF41C8C2EE7004CF7BD /* MBProgressHUD */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		ED03BDF41C8C2EE7004CF7BD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				ED03BDF51C8C2EE7004CF7BD /* MBProgressHUD+Add.h */,
+				ED03BDF61C8C2EE7004CF7BD /* MBProgressHUD+Add.m */,
+				ED03BDF71C8C2EE7004CF7BD /* MBProgressHUD.h */,
+				ED03BDF81C8C2EE7004CF7BD /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		ED1208E51C81EA6A00F80A18 = {
@@ -189,7 +278,8 @@
 		ED1208F01C81EA6A00F80A18 /* Bylaw */ = {
 			isa = PBXGroup;
 			children = (
-				ED12092B1C821DE300F80A18 /* Libs */,
+				ED03BDF31C8C2EE7004CF7BD /* Libs */,
+				ED03BDDE1C8C2B1B004CF7BD /* NetworkHandle */,
 				ED1209251C821D9000F80A18 /* Classes */,
 				ED1209291C821D9000F80A18 /* Category */,
 				ED12092A1C821D9000F80A18 /* API */,
@@ -259,7 +349,7 @@
 		ED1209271C821D9000F80A18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ED1209761C82A1D800F80A18 /* HomeModel */,
+				ED82F2591C8BFDFA0047B557 /* UserModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,28 +378,9 @@
 		ED12092A1C821D9000F80A18 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				ED12092C1C82223100F80A18 /* ApiRequest.h */,
-				ED12092D1C82223100F80A18 /* ApiRequest.m */,
-				ED12092F1C82225500F80A18 /* ApiList.h */,
-				ED1209301C82225500F80A18 /* ApiList.m */,
-				ED1209321C82227900F80A18 /* ApiDataService.h */,
-				ED1209331C82227900F80A18 /* ApiDataService.m */,
+				ED03BDDD1C8C289C004CF7BD /* BaseAPIList.h */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		ED12092B1C821DE300F80A18 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
-		ED1209761C82A1D800F80A18 /* HomeModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomeModel;
 			sourceTree = "<group>";
 		};
 		ED1209841C82AD8F00F80A18 /* BaseViewController */ = {
@@ -465,8 +536,21 @@
 			children = (
 				ED4F90351C8AF24C006CBC92 /* LoginViewController.h */,
 				ED4F90361C8AF24C006CBC92 /* LoginViewController.m */,
+				ED4F90381C8B3D36006CBC92 /* RegisterViewController.h */,
+				ED4F90391C8B3D36006CBC92 /* RegisterViewController.m */,
+				ED82F25A1C8C01200047B557 /* UserInfoViewController.h */,
+				ED82F25B1C8C01200047B557 /* UserInfoViewController.m */,
 			);
 			path = LoginRegiserViewController;
+			sourceTree = "<group>";
+		};
+		ED82F2591C8BFDFA0047B557 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED82F25D1C8C03250047B557 /* UserModel.h */,
+				ED82F25E1C8C03250047B557 /* UserModel.m */,
+			);
+			path = UserModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -653,23 +737,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED120A1A1C83077F00F80A18 /* UINavigationBar+Awesome.m in Sources */,
+				ED03BDEE1C8C2B1B004CF7BD /* MHNetworkManager.m in Sources */,
 				ED4F902E1C8ABB8A006CBC92 /* MZTimerLabel.m in Sources */,
 				ED1209911C82B7B100F80A18 /* SysMsgViewController.m in Sources */,
 				ED4F8FD01C8A7E0B006CBC92 /* AgreeViewController.m in Sources */,
 				ED4F90371C8AF24C006CBC92 /* LoginViewController.m in Sources */,
+				ED82F25C1C8C01200047B557 /* UserInfoViewController.m in Sources */,
+				ED03BDEC1C8C2B1B004CF7BD /* MHAsiNetworkHandler.m in Sources */,
+				ED03BDFA1C8C2EE7004CF7BD /* MBProgressHUD.m in Sources */,
 				ED4F90211C8A9ADC006CBC92 /* TYDotIndicatorView.m in Sources */,
 				ED1208F61C81EA6A00F80A18 /* AppDelegate.m in Sources */,
+				ED03BDEF1C8C2B1B004CF7BD /* Reachability.m in Sources */,
+				ED4F903A1C8B3D36006CBC92 /* RegisterViewController.m in Sources */,
 				ED4F8FD21C8A7E0B006CBC92 /* HomeViewController.m in Sources */,
 				ED1209871C82ADA100F80A18 /* BaseViewController.m in Sources */,
 				ED4F8FD11C8A7E0B006CBC92 /* ContactViewController.m in Sources */,
+				ED03BDF91C8C2EE7004CF7BD /* MBProgressHUD+Add.m in Sources */,
 				ED12098E1C82B79F00F80A18 /* MyInfoViewController.m in Sources */,
+				ED03BDED1C8C2B1B004CF7BD /* MHAsiNetworkItem.m in Sources */,
 				ED4F8FD31C8A7E0B006CBC92 /* MyQuestionViewController.m in Sources */,
+				ED82F25F1C8C03250047B557 /* UserModel.m in Sources */,
 				ED12099B1C82B84200F80A18 /* LeftTableViewController.m in Sources */,
 				ED4F90251C8AAC4C006CBC92 /* FindLawerViewController.m in Sources */,
 				ED1209941C82B7C300F80A18 /* AccManViewController.m in Sources */,
-				ED1209311C82225500F80A18 /* ApiList.m in Sources */,
-				ED12092E1C82223100F80A18 /* ApiRequest.m in Sources */,
-				ED1209341C82227900F80A18 /* ApiDataService.m in Sources */,
 				ED1209971C82B7CE00F80A18 /* SafeViewController.m in Sources */,
 				ED1209371C8223B200F80A18 /* UIViewController+HUD.m in Sources */,
 				ED1208F31C81EA6A00F80A18 /* main.m in Sources */,

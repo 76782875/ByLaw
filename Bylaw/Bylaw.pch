@@ -24,12 +24,12 @@
 #import <AFNetworking/AFNetworking.h>//网络请求
 #import "UIViewController+HUD.h"//进度条
 #import "IQKeyboardManager.h"//键盘自适应
-#import "APIDataService.h" // 管理所有接口的网络请求
-#import "APIRequest.h"//接口操作
-#import "APIList.h"//接口列表
+#import "BaseAPIList.h"
 #import "BaseViewController.h"//基础控制器
 #import "UINavigationBar+Awesome.h"//navigationBar
 #import "UIView+SDAutoLayout.h"//自动布局
+#import "MHNetwrok.h"//网络请求
+#import "MJExtension.h"//Json-Object
 //----------------------大小----------------------------
 
 /**获取屏幕 宽度、高度*/

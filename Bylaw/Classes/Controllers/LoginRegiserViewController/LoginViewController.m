@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "RegisterViewController.h"
+#import "UserModel.h"
 
 @interface LoginViewController ()
 
@@ -17,6 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+#pragma mark 加载界面
+    [self initWithSubViews];
+    
+    
+    
+    
+    
+    
+    
+    
+    // Do any additional setup after loading the view.
+}
+/**
+ *  #pragma mark 加载界面
+ */
+-(void)initWithSubViews{
     self.view.backgroundColor=BACKGROUND_COLOR;
     
     
@@ -56,11 +75,12 @@
     registerBtn.backgroundColor=[UIColor whiteColor];
     registerBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     [registerBtn setTitleColor:DARKGRYCOLOR forState:UIControlStateNormal];
+     [registerBtn addTarget:self action:@selector(goToRegiserView) forControlEvents:UIControlEventTouchUpInside];
     registerBtn.layer.borderWidth = 1;
     registerBtn.layer.borderColor = YellowColor.CGColor;
     [self.view addSubview:registerBtn];
     
-
+    
     UIButton *weixinBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [weixinBtn setTitle:@"微信登陆" forState:UIControlStateNormal];
     weixinBtn.backgroundColor=[UIColor whiteColor];
@@ -70,15 +90,16 @@
     weixinBtn.layer.borderColor = YellowColor.CGColor;
     [self.view addSubview:weixinBtn];
     
-
+    
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     loginBtn.backgroundColor=YellowColor;
     loginBtn.titleLabel.font=[UIFont systemFontOfSize:14];
+    [loginBtn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
     [loginBtn setTitleColor:DARKGRYCOLOR forState:UIControlStateNormal];
     [self.view addSubview:loginBtn];
     
-
+    
     titileLabel.sd_layout
     .leftSpaceToView(self.view,100)
     .rightSpaceToView(self.view,100)
@@ -134,15 +155,55 @@
     .heightEqualToWidth();
     loginBtn.sd_cornerRadiusFromWidthRatio=[NSNumber numberWithFloat:0.5];
 
-    
-    
-    
-    
-    
-    
-    
-    // Do any additional setup after loading the view.
 }
+
+
+
+#pragma mark UIbutton-Action
+/**
+ *  登录aciton
+ */
+-(void)login{
+    
+    //      __weak typeof(self)weakSelf = self;
+    
+    NSDictionary *postDic = @{@"usercfg.username":self.usernameTextField.text,
+                              @"usercfg.password":self.passwordTextField.text};
+
+    
+    [MHNetworkManager postReqeustWithURL:LoginUrl params:postDic successBlock:^(id returnData,int code,NSString *msg) {
+        
+        NSDictionary *dic=[[returnData objectForKey:@"jsonDataBean"] objectForKey:@"result"];
+        UserModel *userModel = [UserModel mj_objectWithKeyValues:dic];
+        
+        NSLog(@"----%@",returnData);
+        
+    } failureBlock:^(NSError *error) {
+        
+        NSLog(@"-----%@",error.localizedDescription);
+        
+    } showHUD:YES];
+    
+    
+    
+}
+
+
+
+/**
+ *  跳转注册界面
+ */
+-(void)goToRegiserView{
+    RegisterViewController *registerVC=[RegisterViewController new];
+    [self presentViewController:registerVC animated:YES completion:nil];
+}
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
